@@ -1,6 +1,3 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-
 export default function Home() {
-  return <div className={styles.container}></div>;
+  return <div className="m-25 bg-gray-100">Hello world</div>;
 }
