@@ -2,7 +2,7 @@ export default function Property() {
   return (
     <>
       <div className="form-group">
-        <div className="form-label">Bank Name</div>
+        <div className="form-label">Property Name</div>
         <div className="form-control">
           <input type="text" />
         </div>

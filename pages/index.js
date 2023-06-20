@@ -25,13 +25,15 @@ export default function Home() {
     }
   };
   return (
-    <div className="grid grid-cols-4 gap-2">
-      <div className="grid-cols-1">
+    <div className="grid grid-cols-3">
+      <div className="grid-cols-1 col-span-1">
         <Sidebar menuitems={menuitems} onClickHandler={onClickHandler} />
       </div>
-      <div className="grid-cols-2 p-2">
-        <h1 className="font-bold">{selectedItem}</h1>
-        <RenderTabContent />
+      <div className="col-span-2">
+        <h1 className="font-bold shadow-md p-4">{selectedItem}</h1>
+        <div className="m-4">
+          <RenderTabContent />
+        </div>
       </div>
     </div>
   );
